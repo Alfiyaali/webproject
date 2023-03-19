@@ -1,6 +1,12 @@
-var headerTitle = document.getElementById('header-title');
-var item = document.getElementById("items");
+var item = document.getElementsByClassName('list-group-item')
+console.log(item)
+console.log(item[1])
+item[1].textContent = 'Hello 2'
+item[1].style.fontWeight = 'bold'
+item[1].style.backgroundColor = 'green'
 
-headerTitle.style.borderBottom = 'solid 3px #000'
-item.style.fontWeight = "bold"
-item.style.color = "green"
+item.style.backgroundColor = '#f4f4f4'
+
+for(let i=0;i<item.length;i++){
+    item[i].style.backgroundColor = '#'
+}
