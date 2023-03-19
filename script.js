@@ -6,6 +6,7 @@ console.log(li[1])
 li[1].textContent = 'Hello 2'
 li[1].style.fontWeight = 'bold'
 li[1].style.backgroundColor = 'green'
+li[2.].style.visibility = 'hidden'
 
 for(let i=0;i<li.length-1;i++){
     li[i].style.backgroundColor = '#'
