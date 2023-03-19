@@ -1,12 +1,18 @@
-var item = document.getElementsByClassName('list-group-item')
-console.log(item)
-console.log(item[1])
-item[1].textContent = 'Hello 2'
-item[1].style.fontWeight = 'bold'
-item[1].style.backgroundColor = 'green'
+var li = document.getElementsByTagName('li')
+var newitem = document.getElementsByClassName('new-item')[0]
 
-item.style.backgroundColor = '#f4f4f4'
+console.log(li)
+console.log(li[1])
+li[1].textContent = 'Hello 2'
+li[1].style.fontWeight = 'bold'
+li[1].style.backgroundColor = 'green'
 
-for(let i=0;i<item.length;i++){
-    item[i].style.backgroundColor = '#'
+for(let i=0;i<li.length-1;i++){
+    li[i].style.backgroundColor = '#'
 }
+
+console.log(newitem);
+newitem.textContent = 'new list item'
+newitem.style.border = "1px solid lightgrey"
+newitem.style.listStyle = "none"
+newitem.style.padding = "10px 20px"
