@@ -82,27 +82,39 @@ var itemList = document.querySelector("#items");
 //create div
 
 var newdiv = document.createElement('div');
+var list = document.createElement('ul');
 
 //add class
 newdiv.className = 'hello';
+list.className = "listhello"
 
 //add id
 newdiv.id = 'hello1'
+list.id = 'listhello1'
 
 //add attr
 newdiv.setAttribute('title', 'Hello Div');
+list.setAttribute('hellotitle', 'Hello Li')
 
 //create tex node
 var newdivText = document.createTextNode('hello world');
+var listText = document.createTextNode('Hello World')
 
 //add text to div
 newdiv.appendChild(newdivText);
+list.appendChild(listText);
 
 var container = document.querySelector('header .container');
 var h1 = document.querySelector('header h1');
+var cont  = document.querySelector('ul, .list-group-item');
+var li = document.querySelector('ul li');
 
 console.log(newdiv);
+console.log(list);
 
 newdiv.style.fontSize = '30px';
+list.style.fontSize = '30px';
+list.style.fontWeight = 'bold';
 
 container.insertBefore(newdiv, h1);
+cont.insertBefore(list, li);
